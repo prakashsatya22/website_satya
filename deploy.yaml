@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: satya-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: satya-deployment
+    spec:
+      containers:
+      - name: satya-deployment
+        image: prakashsatya22/project2
+        ports:
+        - containerPort: 80
