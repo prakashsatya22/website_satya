@@ -7,6 +7,6 @@ spec:
   selector:
     app.kubernetes.io/name: satya-deployment
   ports:
-   - port: 80
-     targetport: 80
-     nodePort: 30008
+    - port: 80
+      targetport: 80
+      nodePort: 30008
